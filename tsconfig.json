@@ -8,9 +8,13 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
+    "outDir": "./dist", 
+    "declaration": true, // Gera arquivos .d.ts para suporte a tipagem
     "baseUrl": "./",
     "paths": {
       "@chakra-ui/react": ["./node_modules/@chakra-ui/react"]
     }
-  }
+  },
+  "include": ["src"], // Inclui somente os arquivos da pasta src para compilação
+  "exclude": ["node_modules", "dist"] // Exclui node_modules e dist da compilação
 }
